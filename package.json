@@ -1,0 +1,51 @@
+{
+  "name": "shms_backend",
+  "version": "1.0.0",
+  "description": "Shareholders Management System BackEnd ",
+  "main": "server.js",
+  "scripts": {
+    "dev": "nodemon server.js",
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/purposeblack1/shareholders-ms/back-end.git"
+  },
+  "keywords": [
+    "pbeth",
+    "shms"
+  ],
+  "author": "Amanuel Chala",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/purposeblack1/shareholders-ms/back-end/issues"
+  },
+  "homepage": "https://gitlab.com/purposeblack1/shareholders-ms/back-end#readme",
+  "dependencies": {
+    "@rlvt/crypt": "^2.0.0",
+    "axios": "^1.6.2",
+    "bcrypt": "^5.1.1",
+    "cloudinary": "^2.1.0",
+    "bcryptjs": "^2.4.3",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "express-async-handler": "^1.2.0",
+
+    "generate-password": "^1.7.1",
+    "handlebars": "^4.7.8",
+    "helmet": "^7.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "lodash": "^4.17.21",
+    "moment": "^2.29.4",
+    "mongoose": "^8.0.3",
+    "multer": "^1.4.5-lts.1",
+    "nodemailer": "^6.9.8",
+    "nodemon": "^3.1.0",
+    "xlsx": "^0.18.5",
+    "path": "^0.12.7",
+    "sniffr": "^1.3.1"
+  }
+}

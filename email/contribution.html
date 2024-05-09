@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PurposeBlack ETH Trading S.C</title>
+  <style>
+    .main {
+      position: relative;
+      height: 100vh;
+      width: 100%;
+    }
+
+    .main::before {
+      content: "";
+      height: 50vh;
+      width: 100%;
+      background-color: #ee4c50;
+      position: absolute;
+      z-index: 111;
+      top: 0;
+      left: 0;
+    }
+
+    .table {
+      background-color: rgb(255, 255, 255);
+      z-index: 999;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      left: 50%;
+      bottom: 50%;
+      transform: translate(-50%, 50%);
+    }
+
+    .name {
+      text-align: left;
+      padding-left: 2rem;
+      font-size: 1.4rem;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+
+    .text-main {
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      color: darkslategrey;
+    }
+
+    .link {
+      font-family: sans-serif;
+    }
+
+    .link:hover {
+      background-color: #ee4c50;
+      transition: .2s ease-in;
+      transform-origin: bottom;
+      color: #eee !important;
+    }
+
+    .date {
+      margin: 0;
+      font-size: 13px;
+      line-height: 24px;
+    }
+
+    .money {
+      font-family: monospace;
+      font-weight: bold;
+      font-style: italic;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+
+<body style="margin: 0;padding: 0;">
+  <div class="main">
+    <!-- <div style="height: 50vh; background-color: #ee4c50; position: relative;"></div> -->
+    <div class="table">
+      <table role="presentation"
+        style="border:2px solid #eee;width: 100%; border-collapse: collapse; border: 0; border-spacing: 0; background: #ffffff">
+        <tr>
+          <td align="center" style="padding: 0">
+            <table role="presentation"
+              style="width: 602px; border-collapse: collapse; border: 1px solid #eee; border-spacing: 0; text-align: left">
+              <tr>
+                <!-- <td align="center" style="padding: 0; background: #fff"><img src="https://www.purposeblacketh.com/partners/Purpose%20Black%20Ethiopia.png?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260" alt="" width="100%" style="height: 250px; display: block; object-fit: contain"/></td> -->
+                <h4 class="name">Thank You {{name}}</h4>
+              </tr>
+              <tr>
+                <td style="padding: 36px 30px 42px 30px">
+                  <table role="presentation"
+                    style="width: 100%; border-collapse: collapse; border: 0; border-spacing: 0">
+                    <tr>
+                      <td style="padding: 0 0 36px 0; color: #153643">
+                        <h1 style="font-size: 24px; margin: 0 0 20px 0; font-family: Arial, sans-serif">Qeleb le
+                          Ethiopia</h1>
+                        <p class="text-main" style="margin: 0 0 12px 0; font-size: 16px; line-height: 24px;">
+                          Thank you for your generous <span class="money">{{ amount }}
+                            <small>{{currency}}</small></span> gift to Qeleb le Ethiopia Program. We are thrilled to
+                          have your support. Through your Contribution we have been able to
+                          accomplish and continue working towards purpose. You truly
+                          make the difference for us, and we are extremely grateful!
+                        </p>
+
+                        <p class="date">{{date}}</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td style="padding: 0">
+                        <table role="presentation"
+                          style="margin:auto; width: 100%; border-collapse: collapse; border: 0; border-spacing: 0">
+                          <tr style="display: flex;justify-content: center;width: 100%;">
+                            <td style="margin:auto; width: 260px; padding: 0; vertical-align: top; color: #153643">
+                            </td><a class="link" href="https://qelebleethiopia.net" target="_blank"
+                              style="border:1px solid #ee4c50;padding:.5rem 1.4rem;border-radius:2px;color: #ee4c50; text-decoration: none">Learn
+                              More</a>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td style="padding: 30px; background: #ee4c50">
+                  <table role="presentation"
+                    style="width: 100%; border-collapse: collapse; border: 0; border-spacing: 0; font-size: 9px; font-family: Arial, sans-serif">
+                    <tr>
+                      <td style="padding: 0; width: 50%" align="left">
+                        <p
+                          style="margin: 0; font-size: 14px; line-height: 16px; font-family: Arial, sans-serif; color: #ffffff">
+                          &reg; PurposeBlack Eth<br /><a href="https://purposeblacketh.com"
+                            style="color: #ffffff; text-decoration: underline"></a></p>
+                      </td>
+                      <td style="padding: 0; width: 50%" align="right">
+                        <table role="presentation" style="border-collapse: collapse; border: 0; border-spacing: 0">
+                          <tr>
+                            <td style="padding: 0 0 0 10px; width: 38px"><a target="_blank"
+                                href="https://www.youtube.com/channel/UCcEpdxagm3zSTeJ5ZorR5MA"
+                                style="color: #ffffff"><img
+                                  src="https://s2.svgbox.net/social.svg?ic=youtube&amp;color=fff" width="32"
+                                  height="32" /></a></td>
+                            <td style="padding: 0 0 0 10px; width: 38px"><a target="_blank"
+                                href="https://facebook.com/purposeblacketh/" style="color: #ffffff"><img
+                                  src="https://s2.svgbox.net/social.svg?ic=facebook&amp;color=fff" width="32"
+                                  height="32" /></a></td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</body>
+
+</html>

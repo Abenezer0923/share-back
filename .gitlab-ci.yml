@@ -1,0 +1,24 @@
+#DONOT MODIFY THIS FILE
+stages:
+  - containerization
+  - deploy
+
+#MASTER | PRODUCTION
+containerization:
+  stage: containerization
+  tags:
+    - pbeth-runner
+  only:
+    - main
+  script:
+    - docker build --no-cache --build-arg NODE_ENV=production --build-arg DB_PASSWORD="$DB_PASSWORD" --build-arg DB_USERNAME="$DB_USERNAME" --build-arg DB_URL="$DB_URL" --build-arg DB_NAME="$DB_NAME" --build-arg SENDER_GMAIL_ADDRESS="$SENDER_GMAIL_ADDRESS" --build-arg SENDER_GMAIL_PASSWORD="$SENDER_GMAIL_PASSWORD" --build-arg PUBLIC_URL="$PUBLIC_URL" --build-arg JWT_SECRET="$JWT_SECRET" -t shms_api_img .
+deployment:
+  stage: deploy
+  tags:
+    - pbeth-runner
+  only:
+    - main
+  script:
+    - docker stop shms_api_container || true
+    - docker rm shms_api_container || true
+    - docker run -d --restart unless-stopped --name=shms_api_container -p 127.0.0.1:5050:5050 shms_api_img
