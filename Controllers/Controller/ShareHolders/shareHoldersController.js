@@ -99,7 +99,7 @@ module.exports = {
     dash_data.shareHolderInfo = shareHolder;
     let shareInfo = await shareInfoModel.find({
       shareHolder: shareHolder._id,
-      paymentCompleted: true,
+      
     });
     
     dash_data.completedShareInfo = shareInfo;
